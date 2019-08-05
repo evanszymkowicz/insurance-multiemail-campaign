@@ -1,0 +1,43 @@
+---
+subject: "Welcome! Please complete setting up your account"
+---
+
+<container>
+
+  {{> header}}
+<wrapper class="content">
+  <row class="header-green" bgcolor="#0033A0">
+    <columns>
+      <h1 class="text-center">Welcome, Jane {{ first_name }}!<br>
+      Thanks for joining Allstate. You're now in Good Hands.</h1>
+    </columns>
+  </row>
+  <row class="grey-border">
+    <columns large="12" small="12">
+      <spacer size="24"></spacer>
+      <p>To get the most out of your 2-Year Term Life Insurance Policy {{ product_name }}, sign into our Customer Portal and make your first premium payment, or just have a look&nbsp;around:</p>
+
+      <button class="rounded small-expanded at-bottom" href="https://hellobestow.com/login">Go to customer portal</button>
+      <spacer size="12"></spacer>
+
+      <p>For reference, here’s your login information:</p>
+      <callout>
+        Login: <a href="https://hellobestow.com/login">hellobestow.com/login{{ login_url }}</a><br>
+        Username: janed@mail.com {{ signup_email }}
+      </callout>
+
+      <p>You’ve begun the Free Look period for your {{ product_name }}. When you make your first premium payment, your policy will be fully in-force and remain for the term of the&nbsp;policy.</p>
+      <callout>
+        Policy Issue Date: 9/99/9999{{ issue_date }}<br>
+        End of Free Look Period: 99/99/9999{{ free_look_end }}
+      </callout>
+
+      <p>If you have any questions, please take a look at our <a href="https://hellobestow.com/faq">Frequently Asked Questions</a>.</p>
+      <p>If you can’t find what you’re looking for, please reach out to one of our Customer Care Advocates by opening the live chat in the bottom right corner of our&nbsp;website.</p>
+    </columns>
+  </row>
+</wrapper>
+
+  {{> business_footer}}
+
+</container>
